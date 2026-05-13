@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV- Bootstrap</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"  rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="css/custom_theme.css"></head>
+<body>
+    <!-- navbar -->
+     <nav class = "navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
+        <div class = "container">
+            <a class = "navbar-brand fm-bold"  href="#">Nguyen Tan Dat</a>
+            <button class = "navbar-toggler " type = "button" data-bs-toggle = "collapse" data-bs-target = "#navbarNav">
+                <span class = "navbar-toggler-icon"></span>
+            </button>
+            <div class = "collapse navbar-collapse" id = "navbarNav">
+                <ul class = "navbar-nav ms-auto">
+                    <li class = "nav-item"></li> <a class = "nav-link" href="#About">Ve Toi</a>
+                    <li class = "nav-item"></li> <a class = "nav-link" href="#Experience">Kinh Nghiem</a>
+                    <li class = "nav-item"></li> <a class = "nav-link" href="#Education">Hoc Van</a>
+                    <li class = "nav-item"></li> <a class = "nav-link" href="#Projects">Du an</a>
+                    <li class = "nav-item"></li> <a class = "nav-link" href="#Skills">Ki nang</a>
+                    <li class = "nav-item"></li> <a class = "nav-link" href="#Contact">Lien he</a>
+                </ul>
+            </div>
+        </div>
+     </nav>
+
+     <!-- Hero Section -->
+      <section class = "hero bg-light py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h1 class="display-4 fw-bold">Xin chào, tôi là <span class="text-primary">Nguyễn Tấn Đạt</span></h1>
+                    <p class="lead text-muted">Backend Developer | Backend | [Kỹ thuật phần mềm]</p>
+                    <p class="mb-4">Tạo ra những app/web có tính chất thực tế.</p>
+                    <a href="#Contact" class="btn btn-primary btn-lg me-3">Liên hệ ngay</a>
+                    <a href="https://drive.google.com/..." target="_blank" class="btn btn-outline-dark btn-lg">
+                        <i class="fas fa-download"></i> Tải CV PDF
+                    </a>
+                </div>
+                <div class="col-lg-6 text-center mt-4 mt-lg-0">
+                    <img src="avartar/Messi.jpg" alt="Avatar" class="img-fluid rounded-circle shadow" style="max-width: 320px; border: 8px solid white;">
+                </div>
+            </div>
+        </div>
+      </section>
+
+
+  <!-- About -->
+   <section>
+        <div class = "container">
+            <h2 class = "text-center mb-5">Ve Toi</h2>
+            <div class = "row">
+                <div class = "col-lg-8 mx-auto">
+                    <p class = "lead text-center">
+                        Tôi là một sinh viên năm 2.  sử dụng thành thạo python, biết cách dùng api(fassAPI) + sql
+                    </p>
+                </div>
+            </div>
+        </div>
+   </section>
+
+   <!-- Experience -->
+    <section id = "#Experience" class = "bg-light py-5">
+        <div class = "container">
+            <h2 class = "text-center mb-5"> Kinh nghiem lam viec</h2>
+            <div class = "row g-4">
+                <div class = "col-md-6">
+                    <div class = "card-body">
+                        <h5>Backend Developer</h5>
+                        <p class = "text-primary"> Company GeminiGen 2026/4/1 - Hien tai </p>
+                        <ul>
+                            <li>Lap trinh vien xay dung cac chuc nang </li>
+                            <li>Debug Error</li>
+                        </ul>
+                    </div>
+                </div>  
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact (giống phong cách kaylapadilla) -->
+    <section id="contact" class="py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <h2 class="text-center mb-4">Liên hệ với tôi</h2>
+                    <p class="text-center lead mb-5">Có bất kỳ câu hỏi nào? Hãy gửi tin nhắn cho tôi!</p>
+                    
+                    <form action="https://formspree.io/f/your-form-id" method="POST">
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <input type="text" class="form-control" name="name" placeholder="Họ và tên" required>
+                            </div>
+                            <div class="col-md-6">
+                                <input type="email" class="form-control" name="email" placeholder="Email" required>
+                            </div>
+                            <div class="col-12">
+                                <input type="text" class="form-control" name="subject" placeholder="Tiêu đề">
+                            </div>
+                            <div class="col-12">
+                                <textarea class="form-control" name="message" rows="6" placeholder="Nội dung tin nhắn" required></textarea>
+                            </div>
+                            <div class="col-12 text-center">
+                                <button type="submit" class="btn btn-primary btn-lg px-5">Gửi tin nhắn</button>
+                            </div>
+                        </div>
+                    </form>
+
+                    <div class="text-center mt-4">
+                        <p>Hoặc gửi email trực tiếp: <a href="mailto:tdat8079@gmail.com" class="text-decoration-none">tdat8079@gmail.com</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container text-center">
+            <p>&copy; 2026 Nguyễn Tấn Đạt. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS Bundle (chỉ cần cho responsive navbar, không ảnh hưởng logic) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
+
+str và String 
+
+
