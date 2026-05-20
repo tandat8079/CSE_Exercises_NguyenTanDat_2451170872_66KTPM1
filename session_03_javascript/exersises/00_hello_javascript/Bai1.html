@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello JavaScript</title>
+</head>
+<body>
+    <h1>Bai tap dau tien voi JavaScript</h1>
+    <p>Mo Console (f12 -> Console) de xem ket qua</p>
+    <script>
+        console.log("Xin chao the gioi");
+        console.log("Toi dang hoc javascript");
+        document.write(2026);
+
+    </script>
+
+    <script>
+        let ten = "Minh";
+        let tuoi = 20;
+        let laSinhVien = true;
+
+        console.log("Ten", ten);
+        console.log("Tuoi", tuoi);
+        console.log("Sinh vien", laSinhVien);
+
+        tuoi = 21;
+        console.log("Tuoi moi:", tuoi);
+        
+        const PI = 3.14159;
+        const TEN_TRUONG = "Dai hoc Thuy Loi";
+
+        console.log("PI =", PI);
+        console.log("Truong:", TEN_TRUONG);
+
+        var monHoc = "CSE391";
+        console.log("Mon:", monHoc);
+    </script>
+
+    <script>
+        
+        let hoTen = "Nguyễn Văn A";     
+        let diaChi = 'Hà Nội';          
+        let loiChao = `Xin chào ${hoTen}`; 
+
+        console.log(typeof hoTen);      
+        console.log(loiChao);           
+
+        
+        let soNguyen = 42;
+        let soThuc = 3.14;
+        let am = -10;
+        let voCuc = Infinity;
+
+        console.log(typeof soNguyen);  
+
+        let laTrue = true;
+        let laFalse = false;
+
+        console.log(typeof laTrue);     
+
+       
+        let giaTriNull = null;          
+        let chuaGanGiaTri;            
+
+        console.log(typeof giaTriNull);  
+        console.log(typeof chuaGanGiaTri); 
+
+       
+        console.log("42 là:", typeof 42);     
+        console.log("'42' là:", typeof "42");     
+        console.log("true là:", typeof true);  
+    </script>
+
+    <script>
+        let ho = "Nguyễn";
+        let ten1 = "Minh";
+        let tuoi1 = 20;
+        let diem = 8.5;
+
+
+        let cau2 = `Tên: ${ho} ${ten}, Tuổi: ${tuoi}`;
+        console.log(cau2);
+
+    
+        let cau3 = `${ho} ${ten} được ${diem} điểm. Năm sau ${ten} sẽ ${tuoi + 1} tuổi.`;
+        console.log(cau3);
+
+       
+        let thongBao = `
+        === THÔNG TIN SINH VIÊN ===
+        Họ tên : ${ho} ${ten}
+        Tuổi    : ${tuoi}
+        Điểm    : ${diem}
+        Xếp loại: ${diem >= 8 ? "Giỏi" : diem >= 6.5 ? "Khá" : "Trung bình"}
+        ===========================
+        `;
+        console.log(thongBao);
+    </script>
+
+
+<script>
+    let a = 15;
+    let b = 4;
+    console.log(`${a} + ${b} = `, a + b);
+    console.log(`${a} - ${b} =`, a-b);
+    console.log(`${a} * ${b} =`, a*b);
+    console.log(`${a} / ${b} =`, a / b);    
+    console.log(`${a} % ${b} =`, a % b);   
+    console.log(`${a} ** ${b} =`, a ** b);
+
+
+
+    let x = 10;
+    x+=5;
+    x-=3;
+    x*=2;
+    x/=4;
+    console.log("x =", x);
+
+    let dem = 0;
+    dem++;
+    dem++;
+    dem--;
+    console.log("dem =", dem);
+
+
+    let banKinh =5 ;
+    const dienTich = PI * banKinh*banKinh;
+    console.log(`Dien tich hinh tron la: ${dienTich}`);
+</script>
+
+
+
+<script>
+    console.log(10 > 5);
+    console.log(10 < 5);
+    console.log(10 >= 10);
+    console.log(10 <= 9);
+    console.log(10 != 5);
+    console.log(10 !== "10");
+
+    console.log(true && true)
+</script>
+// 0.6
+<script>
+    let monHoc = ["Toan", "Ly", "Hoa", "Sinh"];
+    let diemSo = [8,7,9,6.5,8.5];
+    let honHop = ["Minh", 20, true, null];
+
+    console.log(monHoc[0]);
+    console.log(monHoc[1]);
+    console.log(monHoc.length);
+    console.log(monHoc[monHoc.length -1 ]);
+
+    monHoc.push("Anh");
+    monHoc.pop();
+    monHoc.unshift("GDCD");
+    monHoc.shift();
+
+
+    for (let i = 0; i < diemSo.length; i++) {
+    console.log(`Môn ${i + 1}: ${diemSo[i]} điểm`);
+    }
+
+    // Cách 2: forEach (hay dùng hơn)
+    diemSo.forEach((diem, index) => {
+        console.log(`Môn ${index + 1}: ${diem} điểm`);
+    });
+
+
+    console.log(monHoc.includes("Lý"));   
+    console.log(monHoc.indexOf("Hóa"));   
+    console.log(monHoc.indexOf("Anh"));   
+
+    let so = [3, 1, 4, 1, 5, 9, 2, 6];
+    so.sort((a, b) => a - b); 
+    console.log(so);
+
+
+
+    // bai tap con
+
+    let monAn = ["Com", "pho", "chap", "sup", "ca"];
+    console.log(monAn[0]);
+    console.log(monAn[monAn.length - 1]);
+    monAn.unshift("ComRang");
+    monAn.pop();
+
+    for (let i =0; i < monAn.length; i++)
+    {
+        console.log(` Mon ${index + 1}: ${monAn[i]}`)
+    }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+    let sinhVien = {
+        hoTen: "Nguyen Van Minh",
+        tuoi: 20,
+        mssv: "2451170872",
+        diem: [8, 7.5, 9],
+        laSinhVien: true
+    };
+
+    console.log(sinhVien.hoten);
+    console.log(sinhVien["tuoi"]);
+    console.log(sinhVien.diem[0]);
+
+
+    // them , sua , xoa trong object
+    sinhVien.email = "minh@example.com";
+    sinhVien.tuoi = 21;
+    delete sinhVien.laSinhVien;
+
+
+    for (let key in sinhVien){
+        console.log(`${ley}: ${sinhVien[key]}`);
+    }
+
+    console.log(Object.keys(sinhVien));
+    console.log
+</script>
+</body>
+</html>
